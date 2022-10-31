@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Bookmark is an AI sytem that helps you organize your bookmarks however you like with one click of a button."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Bookmark &mdash; Never stress again!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="images/logo-bookmark.svg" class="logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#feature" class="main-nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#download" class="main-nav-link">Pricing</a>
+          </li>
+          <li>
+            <a href="#cta" class="main-nav-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="#login" class="main-nav-link nav-login">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <!-- <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon> -->
+        <img
+          src="images/icon-hamburger.svg"
+          alt="menu-outline"
+          class="icon-mobile-nav"
+          name="menu-outline"
+        />
+        <img
+          src="images/icon-close.svg"
+          alt="close-outline"
+          class="icon-mobile-nav"
+          name="close-outline"
+        />
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">A Simple Bookmark Manager</h1>
+            <p class="hero-description">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="btns">
+              <a href="#chrome" class="btn btn--chrome">Get it on Chrome </a>
+              <a href="#firefox" class="btn btn--firefox">Get it on Firefox </a>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="images/illustration-hero.svg"
+              class="hero-img"
+              alt="illustration of bookmarking app"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-features" id="feature">
+        <span class="sub-heading center-text">Features</span>
+        <p class="feature-description center-text margin-st-bttm">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+
+        <div class="features grid grid--3-col container justify-center-sm">
+          <div class="feature bookmarking-box">
+            <h3 class="sub-heading feature-title">Simple Bookmarking</h3>
+          </div>
+          <div class="feature searching-box">
+            <h3 class="sub-heading feature-title">Speedy Searching</h3>
+          </div>
+          <div class="feature sharing-box">
+            <h3 class="sub-heading feature-title">Easy Sharing</h3>
+          </div>
+        </div>
+        <div class="feature-plan bookmarking">
+          <div class="feature-box grid grid--2-col">
+            <div class="feature-img-box">
+              <img
+                src="images/illustration-features-tab-1.svg"
+                class="feature-image"
+                alt="Picture of bookmark app"
+              />
+            </div>
+            <div class="feature-text-box">
+              <h2 class="heading-tertiary">Bookmark in one click</h2>
+              <p class="description">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+
+              <a href="#moreInfoBookmark" class="btn btn--feat">More Info </a>
+            </div>
+          </div>
+        </div>
+        <div class="feature-plan sharing">
+          <div class="feature-box grid grid--2-col">
+            <div class="feature-img-box">
+              <img
+                src="images/illustration-features-tab-2.svg"
+                class="feature-image"
+                alt="Picture of bookmark app"
+              />
+            </div>
+            <div class="feature-text-box">
+              <h2 class="heading-tertiary">More Info Intelligent search</h2>
+              <p class="description">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+
+              <a href="#moreInfoSharing" class="btn btn--feat">More Info </a>
+            </div>
+          </div>
+        </div>
+        <div class="feature-plan searching">
+          <div class="feature-box grid grid--2-col">
+            <div class="feature-img-box">
+              <img
+                src="images/illustration-features-tab-3.svg"
+                class="feature-image"
+                alt="Picture of bookmark app"
+              />
+            </div>
+            <div class="feature-text-box">
+              <h2 class="heading-tertiary">More Info Share your bookmarks</h2>
+              <p class="description">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+
+              <a href="#moreInfoSearching" class="btn btn--feat">More Info </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-download" id="download">
+        <div class="container">
+          <span class="sub-heading center-text">Download the extension</span>
+          <p class="sub-description center-text margin-st-bttm">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+          <div class="download-location" id="chrome">
+            <div class="grid grid--3-col center-text download">
+              <div class="download-plan">
+                <img
+                  src="images/logo-chrome.svg"
+                  alt="chrome logo"
+                  class="site-logo"
+                />
+                <h2 class="download-title">Add to Chrome</h2>
+                <p class="download-description">Minimum version 62</p>
+
+                <a href="#chromeSectionDwn" class="btn btn--dwn"
+                  >Add & Install Extension</a
+                >
+              </div>
+              <div class="download-plan Firefox" id="firefox">
+                <img
+                  src="images/logo-firefox.svg"
+                  alt="Firefox logo"
+                  class="site-logo"
+                />
+                <h2 class="download-title">Add to Firefox</h2>
+                <p class="download-description">Minimum version 55</p>
+
+                <a href="#firefoxSectionDwn" class="btn btn--dwn"
+                  >Add & Install Extension</a
+                >
+              </div>
+              <div class="download-plan opera" id="opera">
+                <img
+                  src="images/logo-opera.svg"
+                  alt="opera logo"
+                  class="site-logo"
+                />
+                <h2 class="download-title">Add to Opera</h2>
+                <p class="download-description">Minimum version 46</p>
+
+                <a href="#operaSectionDwn" class="btn btn--dwn"
+                  >Add & Install Extension</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION FQA -->
+      <section class="section-FQA" id="FQA">
+        <div class="container">
+          <div class="FQA-head">
+            <span class="sub-heading center-text"
+              >Frequently Asked Questions</span
+            >
+            <p class="sub-description center-text margin-st-bttm">
+              Here are some of our FAQs. If you have any other questions you’d
+              like answered please feel free to email us.
+            </p>
+          </div>
+          <div class="FQA">
+            <div class="FQA-items">
+              <div class="FQA-item Q1">
+                <p class="Question">What is Bookmark?</p>
+                <img
+                  class="arrow1 arrow"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <div class="hidden-box">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce tincidunt justo eget ultricies fringilla. Phasellus
+                    blandit ipsum quis quam ornare mattis.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+
+              <div class="FQA-item Q2">
+                <p class="Question">How can I request a new browser?</p>
+                <img
+                  class="arrow2 arrow"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <div class="hidden-box">
+                  <p>
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdie
+                    tVivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+
+              <div class="FQA-item Q3">
+                <p class="Question">Is there a mobile app?</p>
+                <img
+                  class="arrow3 arrow"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <div class="hidden-box">
+                  <p>
+                    Sed consectetur quam id neque fermentum accumsan. Praesent
+                    luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                    Cras in ligula quis est pharetra mattis sit amet pharetra
+                    purus. Sed sollicitudin ex et ultricies bibendum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Items 4 -->
+              <div class="FQA-item Q4">
+                <p class="Question">What about other Chromium browsers?</p>
+                <img
+                  class="arrow4 arrow"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <div class="hidden-box">
+                  <p>
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                    placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                    gravida pellentesque non ut veli
+                  </p>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <a href="#FQA" class="btn center-text btn--FQA">More Info</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------SECTION CTA ----------------------------------------- -->
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta center-text">
+            <span class="sub-heading color">35,000+ already joined</span>
+            <p class="heading-secondary margin-st-bttm color">
+              Stay up-to-date with what we’re doing
+            </p>
+            <forrm class="cta-form" action="#" name="sign-up">
+              <div>
+                <input
+                  id="email"
+                  placeholder="Enter your email address"
+                  type="email"
+                  required
+                />
+                <a href="#" class="btn btn--cta">Contact Us</a>
+              </div>
+            </forrm>
+          </div>
+        </div>
+      </section>
+      <!-- Footer--------- -->
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="logo-col">
+            <a href="#">
+              <img
+                src="images/logo-bookmark - footer.svg"
+                class="logo footer-bk-logo"
+              />
+            </a>
+            <div>
+              <a href="#feature" class="footer-nav-link">Features</a>
+            </div>
+            <div>
+              <a href="#download" class="footer-nav-link">Pricing</a>
+            </div>
+            <div>
+              <a href="#cta" class="footer-nav-link">Contact Us</a>
+            </div>
+          </div>
+          <div class="social">
+            <ul class="social-link">
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon
+                    class="social-icons"
+                    name="logo-facebook"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon class="social-icons" name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

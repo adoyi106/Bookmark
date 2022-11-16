@@ -67,43 +67,26 @@ obs.observe(sectionHeroEl);
 ////////////////////////////////////////////
 //Making the feature link work
 
-const bookMarkingEl = document.querySelector('.bookmarking-box');
-const searchingEl = document.querySelector('.searching-box');
-const sharingEl = document.querySelector('.sharing-box');
+const featureEl = document.querySelectorAll('.feature');
+const featurePlanEl = document.querySelectorAll('.feature-plan');
 
-bookMarkingEl.addEventListener('click', function () {
-  document.querySelector('.bookmarking').style.display = 'block';
-  document.querySelector('.searching').style.display = 'none';
-  document.querySelector('.sharing').style.display = 'none';
-});
+for (let i = 0; i < featureEl.length; i++)
+  featureEl[i].addEventListener('click', function () {
+    // console.log('button clicked');
+    featureEl[i] = featurePlanEl[i];
+    featurePlanEl[i].classList.remove('hidden');
 
-searchingEl.addEventListener('click', function () {
-  document.querySelector('.bookmarking').style.display = 'none';
-  document.querySelector('.searching').style.display = 'block';
-  document.querySelector('.sharing').style.display = 'none';
-});
-
-sharingEl.addEventListener('click', function () {
-  document.querySelector('.bookmarking').style.display = 'none';
-  document.querySelector('.searching').style.display = 'none';
-  document.querySelector('.sharing').style.display = 'block';
-});
-
-// const featureEl = document.querySelectorAll('.feature');
-// const featurePlanEl = document.querySelectorAll('.feature-plan');
-
-// // for (let i = o; i < featureEl.length; i++)
-// //   featureEl[i].addEventListener('click', function () {
-// //     for (let i = 0; i < featurePlanEl.length; i++)
-// //       featurePlanEl[i].classList.toggle('activet');
-// //     // featurePlanEl[i].classList.remove('hiddent');
-// //   });
-
-// featureEl.forEach(function (featurePlanEl) {
-//   featureEl.addEventListener('click', function () {
-//     featurePlanEl.classList.toggle('active');
-//   });
-// });
+    if (featureEl[i] !== featureEl[0]) {
+      featurePlanEl[0].classList.add('hidden');
+    }
+    if (featureEl[i] !== featureEl[2]) {
+      featurePlanEl[2].classList.add('hidden');
+    }
+    if (featureEl[i] !== featureEl[1]) {
+      featurePlanEl[1].classList.add('hidden');
+    }
+    featurePlanEl[i].classList.remove('hiddent');
+  });
 
 //////////////////////////////////////////////////////////////////
 //Making FAQ work

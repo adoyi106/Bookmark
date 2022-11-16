@@ -146,7 +146,7 @@
   color: #5368df;
   box-shadow: inset 0 0 3px #5368df;
 }
-.bookmarking {
+/* .bookmarking {
   display: block;
 }
 
@@ -155,13 +155,13 @@
 }
 .sharing {
   display: none;
-}
+} */
 /* .activet {
   display: block !important;
-}
-.hiddent {
-  display: none;
 } */
+.hidden {
+  display: none;
+}
 
 /* **************************************** */
 /* SECTION DOWNLOAD */
